@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f2f2f2;
+  }
+  
+  header {
+    background-color: #4a4a4a;
+    color: #ffffff;
+    padding: 16px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  main {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 70px);
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 32px;
+  }
+  
+  .code-container {
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 32px;
+  }
+  
+  .output-container {
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  
+  .code-input {
+    margin-bottom: 16px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 350px;
+    resize: none;
+    border: none;
+    outline: none;
+    background-color: #f2f2f2;
+    padding: 16px;
+    font-family: "Roboto Mono", mon
+  }  
+
+  .hidden {
+    display: none;
+  }
+
+  #compile-button {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ff5a5f;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+  }
+
+  #compile-button:hover {
+    background-color: #fff;
+    color: #ff5a5f;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3), 0px 4px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+  button {
+    background-color: #4CAF50; /* зелений фон */
+    border: none; /* без рамки */
+    color: white; /* білий текст */
+    padding: 10px 20px; /* зазори */
+    text-align: center; /* по центру */
+    text-decoration: none; /* без підкреслення */
+    display: inline-block; /* відображати як блок */
+    font-size: 16px; /* розмір шрифту */
+    margin: 10px; /* зазори між кнопками */
+    cursor: pointer; /* змінювати курсор на підказку, що це кнопка */
+  }
+  
+  button:hover {
+    background-color: #3e8e41; /* зелений фон при наведенні курсора */
+  }
+  
+  #output-frame {
+    width: 100%;
+    height: 100%;
+    height: 506px;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }

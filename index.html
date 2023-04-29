@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Code Compiler</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Code Compiler</h1>
+    </header>
+
+    <main>
+      <div class="grid-container">
+        <div class="code-container">
+          <div class="button-container">
+            <button id="html-button">HTML</button>
+            <button id="css-button">CSS</button>
+            <button id="js-button">JavaScript</button>
+          </div>
+          <form>
+            <div id="html-input" class="code-input">
+              <textarea id="html-code" placeholder="Enter your HTML code here"></textarea>
+            </div>
+            <div id="css-input" class="code-input hidden">
+              <textarea id="css-code" placeholder="Enter your CSS code here"></textarea>
+            </div>
+            <div id="js-input" class="code-input hidden">
+              <textarea id="js-code" placeholder="Enter your JavaScript code here"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="output-container">
+          <div id="output">
+            <iframe id="output-frame" sandbox="allow-scripts allow-modals"></iframe>
+          </div>
+        </div>
+      </div>
+      <button id="compile-button">Compile</button>
+
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
